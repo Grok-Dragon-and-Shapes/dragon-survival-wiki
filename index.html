@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Справочник Dragon Survival</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<main class='layout'>
+  <header>
+    <h1>Справочник Dragon Survival</h1>
+    <p class='sub'>Мобы и руды из мода. Каждая запись должна ссылаться на источник.</p>
+  </header>
+
+  <section class='card'>
+    <form id='filters' class='filters' role='search'>
+      <label>Поиск
+        <input id='search' type='search' placeholder='Название, биом или заметка'>
+      </label>
+      <label>Тип
+        <select id='kind'>
+          <option value=''>Все</option>
+          <option value='моб'>Мобы</option>
+          <option value='руда'>Руды</option>
+        </select>
+      </label>
+    </form>
+  </section>
+
+  <section class='card'>
+    <ul id='list' class='list'></ul>
+    <p id='empty' class='muted' hidden></p>
+  </section>
+
+  <section class='card'>
+    <h2>Источники</h2>
+    <ul id='sources' class='sources'></ul>
+  </section>
+</main>
+<script src='app.js'></script>
+</body>
+</html>
